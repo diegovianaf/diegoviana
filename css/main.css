@@ -48,7 +48,6 @@ body {
   margin: auto;
   -webkit-column-gap: 60px;
           column-gap: 60px;
-  border: 1px solid white;
 }
 
 .home .image img {
