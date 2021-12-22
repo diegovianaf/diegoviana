@@ -5,7 +5,7 @@
 
 
 .header {
-  background: $color-primary;
+  background: $color-primary-light;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -20,7 +20,7 @@
     display: flex;
 
     li {
-      margin-left: 10px;
+      margin: 0 10px;
 
       a {
         display: block;
@@ -33,60 +33,96 @@
 .home {
   display: flex;
   align-items: center;
-  height: calc(100vh - 80px);
-  width: 1100px;
+  flex-wrap: wrap;
+  max-width: 1270px;
+  height: calc(100vh - 85px);
   margin: auto;
-  column-gap: 60px;
+  // gap: 20px;
   // border: 1px solid white;
 
-  .image img {
-      width: 340px;
-      text-align: center;
+  div {
+    flex: 1 1 420px;
+    // expandir - diminuir - minímo de px para não quebrar (wrap)
+    margin: 20px 0;
+    padding: 20px 0;
+  }
+
+  .image {
+    text-align: center;
+
+    img {
+      width: 400px;
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
+  }
 
   .content {
+    padding: 0 20px;
 
     h1 {
       font-size: 36px;
-      letter-spacing: 0px;
-      line-height: 1;
+      padding: 10px 0;
     }
-
+      
     span {
       color: $color-secondary;
       font-size: 26px;
+      padding: 5px 0;
     }
-
+      
     p {
-      font-size: 15px;
-      letter-spacing: .5px;
-      line-height: 2;
+      font-size: 16px;
+      color: $color-primary-lighter;
+      padding: 10px 0;
     }
   }
 }
 
-@media (max-width: 1270px) {
-  .home {
-    width: auto;
-    margin: auto 100px;
-  }
-}
 
-@media (max-width: 900px) {
-  .home {
-    flex-direction: column;
-    margin: auto 100px;
-    padding: 60px;
+// @media (max-width: 1270px) {
+//   .home {
+//     width: auto;
+//     margin: auto 100px;
+//   }
+// }
 
-    .image img {
-      width: 220px;
-      text-align: center;
-      margin-bottom: 30px;
-    }
+// @media (max-width: 840px) {
+//   .home {
+//     // flex-direction: column;
 
-    .content {
-        text-align: center;
-    }
-  }
-}
+//     .image {
+//       margin: 0 auto;
+//       padding: 0;
+      
+//       img {
+//         width: 300px;
+//       }
+//     }
+
+//     .content {
+//         margin: 0 20px;
+//         text-align: center;
+//         padding: 0px 20px;
+//     }
+//   }
+// }
+
+// @media (max-width: 530px) {
+//   .header {
+//     justify-content: space-around;
+//   }
+
+//   .home {
+//     margin: 0;
+//     padding: 0;
+
+//     .image {
+//       margin: 0;
+//       padding: 0;
+
+//       img {
+//         width: 250px;
+//       }
+//     }
+//   }
+// }
