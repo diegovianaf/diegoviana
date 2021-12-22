@@ -13,27 +13,42 @@
 
 body {
   color: white;
-  background-color: black;
+  background-color: #0d0d0d;
 }
 
-.navbar {
+.header {
   background: #0d0d0d;
-  padding: 20px;
-}
-
-.navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
 }
 
-.navbar ul a {
-  padding: 0 20px;
+.header a {
   color: white;
-  font-size: 20px;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .menu li {
+  margin-left: 10px;
+}
+
+.header .menu li a {
+  display: block;
+  padding: 10px;
 }
 
 .home {

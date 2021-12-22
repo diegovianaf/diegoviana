@@ -4,21 +4,30 @@
 @import 'variables';
 
 
-
-.navbar {
+.header {
   background: $color-primary;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  
-  ul {
-    display: flex;
-    justify-content: flex-end;
 
-    a {
-      padding: 0 20px;
-      color: white;
-      font-size: 20px;
-    }
+  a {
+    color: white;
   }
+
+  .menu {
+    display: flex;
+
+    li {
+      margin-left: 10px;
+
+      a {
+        display: block;
+        padding: 10px;
+      }
+    }
+  } 
 }
 
 .home {
