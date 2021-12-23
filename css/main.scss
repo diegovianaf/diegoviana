@@ -3,9 +3,13 @@
 @import 'base';
 @import 'variables';
 
+body {
+  color: white;
+  background-color: $main-color;
+}
 
 .header {
-  background: $color-primary-light;
+  background: $main-light-color;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -31,19 +35,17 @@
         color: white;
         font-size: 18px;
 
-      i {
-          color: $color-secondary;
-        }
-
-      &:hover {
-        background-color: $color-secondary;
-
         i {
-          color: white;
+            color: $secondary-color;
         }
-      }
 
-        
+        &:hover {
+          background-color: $secondary-color;
+
+          i {
+            color: white;
+          }
+        }
       }
     }
   } 
@@ -84,14 +86,15 @@
     }
       
     span {
-      color: $color-secondary;
+      color: $secondary-color;
       font-size: 26px;
+      font-weight: 500;
       padding: 5px 0;
     }
       
     p {
       font-size: 16px;
-      color: $color-primary-lighter;
+      color: $main-lighter-color;
       padding: 10px 0;
     }
   }
