@@ -10,21 +10,40 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  // padding: 20px;
 
-  a {
+  .logo {
+    padding: 20px;
+    font-size: 18px;
     color: white;
+    letter-spacing: -1px;
   }
 
   .menu {
     display: flex;
 
     li {
-      margin: 0 10px;
+      // margin: 0 10px;
 
       a {
         display: block;
-        padding: 10px;
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+
+      i {
+          color: $color-secondary;
+        }
+
+      &:hover {
+        background-color: $color-secondary;
+
+        i {
+          color: white;
+        }
+      }
+
+        
       }
     }
   } 
@@ -35,7 +54,7 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 1270px;
-  height: calc(100vh - 85px);
+  height: calc(100vh - 90px);
   margin: auto;
   // gap: 20px;
   // border: 1px solid white;
