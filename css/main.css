@@ -52,11 +52,11 @@ body {
 }
 
 .header .menu li a i {
-  color: #2a89e7;
+  color: #76b9fc;
 }
 
 .header .menu li a:hover {
-  background-color: #2a89e7;
+  background-color: #76b9fc;
 }
 
 .header .menu li a:hover i {
@@ -104,15 +104,15 @@ body {
 }
 
 .home .content span {
-  color: #2a89e7;
-  font-size: 26px;
-  font-weight: 500;
+  color: #76b9fc;
+  font-size: 20px;
   padding: 5px 0;
 }
 
 .home .content p {
   font-size: 16px;
-  color: #aaa;
+  color: #ccc;
+  line-height: 1.5;
   padding: 10px 0;
 }
 /*# sourceMappingURL=main.css.map */
