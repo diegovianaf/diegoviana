@@ -8,6 +8,16 @@ body {
   background-color: $main-color;
 }
 
+.heading {
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 20px;
+
+  span {
+    color: $secondary-color
+  }
+}
+
 .header {
   background: $main-light-color;
   display: flex;
@@ -23,33 +33,37 @@ body {
     letter-spacing: -1px;
   }
 
-  .menu {
-    display: flex;
+  .navbar {
 
-    li {
-      // margin: 0 10px;
+    ul {
+      display: flex;
 
-      a {
-        display: block;
-        padding: 20px;
-        color: white;
-        font-size: 18px;
+      li {
+        // margin: 0 10px;
 
-        i {
-            color: $secondary-color;
-        }
-
-        &:hover {
-          background-color: $secondary-color;
+        a {
+          display: block;
+          padding: 20px;
+          color: white;
+          font-size: 18px;
 
           i {
-            color: white;
+              color: $secondary-color;
+          }
+
+          &:hover {
+            background-color: $secondary-color;
+
+            i {
+              color: white;
+            }
           }
         }
       }
     }
-  } 
+  }
 }
+
 
 .home {
   display: flex;
@@ -96,6 +110,54 @@ body {
       color: $main-lighter-color;
       line-height: 1.5;
       padding: 10px 0;
+    }
+  }
+}
+
+
+.contact {
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // gap: 2rem;
+
+    .info-container {
+      width: 40%;
+
+      h2 {
+        font-size: 36px;
+        // padding-bottom: 1rem;
+      }
+
+      p {
+        // font-size: 1.5rem;
+        line-height: 1.8;
+        color: $main-lighter-color;
+        padding: 10px 0;
+      }
+
+      .box-container {
+        padding: 10px 0;
+
+        .box {
+          display: flex;
+          gap: 10px;
+          padding: 10px 0;
+
+          i {
+            font-size: 30px;
+            color: $secondary-color;
+          }
+
+          h3 {
+            font-size: 20px;
+          }
+        }
+      }
+
+      
     }
   }
 }

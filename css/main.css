@@ -16,6 +16,16 @@ body {
   background-color: #0d0d0d;
 }
 
+.heading {
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.heading span {
+  color: #76b9fc;
+}
+
 .header {
   background: #1d1d1d;
   display: -webkit-box;
@@ -38,28 +48,28 @@ body {
   letter-spacing: -1px;
 }
 
-.header .menu {
+.header .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .menu li a {
+.header .navbar ul li a {
   display: block;
   padding: 20px;
   color: white;
   font-size: 18px;
 }
 
-.header .menu li a i {
+.header .navbar ul li a i {
   color: #76b9fc;
 }
 
-.header .menu li a:hover {
+.header .navbar ul li a:hover {
   background-color: #76b9fc;
 }
 
-.header .menu li a:hover i {
+.header .navbar ul li a:hover i {
   color: white;
 }
 
@@ -114,5 +124,51 @@ body {
   color: #ccc;
   line-height: 1.5;
   padding: 10px 0;
+}
+
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .container .info-container {
+  width: 40%;
+}
+
+.contact .container .info-container h2 {
+  font-size: 36px;
+}
+
+.contact .container .info-container p {
+  line-height: 1.8;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+.contact .container .info-container .box-container {
+  padding: 10px 0;
+}
+
+.contact .container .info-container .box-container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.contact .container .info-container .box-container .box i {
+  font-size: 30px;
+  color: #76b9fc;
+}
+
+.contact .container .info-container .box-container .box h3 {
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */
