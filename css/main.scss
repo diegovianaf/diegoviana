@@ -117,39 +117,35 @@ body {
 }
 
 .contact {
-  div {
-    flex: 1 1 420px;
-    // expandir - diminuir - minímo de px para não quebrar (wrap)
-    
+  .row {
+    width: 100%;
   }
 
   .info-container {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
+    margin: 60px auto;
+    flex: 1 1 350px;
+
+    h2 {
+      font-size: 36px;
+      padding-bottom: 20px;
+    }
+  
+    p {
+      line-height: 1.5;
+      color: $main-lighter-color;
+    }
 
     .content-container {
-      border: 2px solid white;
-      padding: 40px;
-      margin: 40px;
-      // width: 50%;
-
-      h2 {
-        font-size: 36px;
-      }
-    
-      p {
-        line-height: 1.5;
-        color: $main-lighter-color;
-      }
+      padding: 0 20px;
+      margin: 0 40px;
+      width: calc(1270px - 50%);
     }
 
     .box-container {
-      border: 2px solid white;
-      padding: 20px;
-      margin: 30px;
-      // width: 40%;
+      padding: 0 20px;
+      margin: 0 30px;
+      width: calc(1270px - 50%);
 
       .box {
         display: flex;
@@ -167,11 +163,23 @@ body {
       }
 
       .social {
+        padding: 10px 0;
  
         a {
-          font-size: 35px;
-          padding: 10px;
-          color: $secondary-color;
+          font-size: 20px;
+          height: 45px;
+          width: 45px;
+          line-height: 45px;
+          border-radius: 50%;
+          background: $main-light-color;
+          color: white;
+          text-align: center;
+          margin-right: 5px;
+
+          &:hover {
+            color: $main-color;
+            background: $secondary-color;
+          }
         }
       }
     }

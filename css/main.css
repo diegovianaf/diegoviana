@@ -126,42 +126,40 @@ body {
   padding: 10px 0;
 }
 
-.contact div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 420px;
-          flex: 1 1 420px;
+.contact .row {
+  width: 100%;
 }
 
 .contact .info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin: 60px auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 350px;
+          flex: 1 1 350px;
 }
 
-.contact .info-container .content-container {
-  border: 2px solid white;
-  padding: 40px;
-  margin: 40px;
-}
-
-.contact .info-container .content-container h2 {
+.contact .info-container h2 {
   font-size: 36px;
+  padding-bottom: 20px;
 }
 
-.contact .info-container .content-container p {
+.contact .info-container p {
   line-height: 1.5;
   color: #ccc;
 }
 
+.contact .info-container .content-container {
+  padding: 0 20px;
+  margin: 0 40px;
+  width: calc(1270px - 50%);
+}
+
 .contact .info-container .box-container {
-  border: 2px solid white;
-  padding: 20px;
-  margin: 30px;
+  padding: 0 20px;
+  margin: 0 30px;
+  width: calc(1270px - 50%);
 }
 
 .contact .info-container .box-container .box {
@@ -181,9 +179,24 @@ body {
   font-size: 20px;
 }
 
+.contact .info-container .box-container .social {
+  padding: 10px 0;
+}
+
 .contact .info-container .box-container .social a {
-  font-size: 35px;
-  padding: 10px;
-  color: #76b9fc;
+  font-size: 20px;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  background: #1d1d1d;
+  color: white;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.contact .info-container .box-container .social a:hover {
+  color: #0d0d0d;
+  background: #76b9fc;
 }
 /*# sourceMappingURL=main.css.map */
