@@ -117,10 +117,33 @@ body {
 }
 
 .contact {
+  div {
+    flex: 1 1 420px;
+    // expandir - diminuir - minímo de px para não quebrar (wrap)
+    
+  }
 
   .info-container {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    
+
+    .content-container {
+      border: 2px solid white;
+      padding: 40px;
+      margin: 40px;
+      // width: 50%;
+
+      h2 {
+        font-size: 36px;
+      }
+    
+      p {
+        line-height: 1.5;
+        color: $main-lighter-color;
+      }
+    }
 
     .box-container {
       border: 2px solid white;
@@ -141,28 +164,15 @@ body {
         h3 {
           font-size: 20px;
         }
+      }
 
-        .social {
-          a {
-            font-size: 30px;
-          }
+      .social {
+ 
+        a {
+          font-size: 35px;
+          padding: 10px;
+          color: $secondary-color;
         }
-      }
-    }
-
-    .content-container {
-      border: 2px solid white;
-      padding: 40px;
-      margin: 40px;
-      // width: 50%;
-
-      h2 {
-        font-size: 36px;
-      }
-    
-      p {
-        line-height: 1.5;
-        color: $main-lighter-color;
       }
     }
 
