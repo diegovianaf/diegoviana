@@ -19,7 +19,7 @@ body {
 .heading {
   text-align: center;
   font-size: 64px;
-  margin-bottom: 20px;
+  margin-bottom: 20px auto;
 }
 
 .heading span {
@@ -39,13 +39,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  width: 100vw;
 }
 
 .header .logo {
-  padding: 20px;
+  padding: 0 20px;
   font-size: 18px;
   color: white;
   letter-spacing: -1px;
+}
+
+.header .navbar {
+  padding: 0 20px;
 }
 
 .header .navbar ul {
@@ -83,7 +89,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1270px;
-  height: calc(100vh - 90px);
+  height: 100vh;
   margin: auto;
 }
 
@@ -100,6 +106,7 @@ body {
 }
 
 .home .image img {
+  margin-top: 100px;
   width: 400px;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
@@ -126,18 +133,13 @@ body {
   padding: 10px 0;
 }
 
-.contact .row {
-  width: 100%;
-}
-
 .contact .info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 60px auto;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 350px;
-          flex: 1 1 350px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .contact .info-container h2 {
