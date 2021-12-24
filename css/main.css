@@ -73,7 +73,7 @@ body {
   color: white;
 }
 
-.home {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,37 +126,22 @@ body {
   padding: 10px 0;
 }
 
-.contact .container {
+.contact .info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: auto 30px;
 }
 
-.contact .container .info-container {
-  width: 40%;
-  padding: 0 20px;
+.contact .info-container .box-container {
+  border: 2px solid white;
+  padding: 20px;
+  margin: 30px;
 }
 
-.contact .container .info-container h2 {
-  font-size: 36px;
-}
-
-.contact .container .info-container p {
-  line-height: 1.5;
-  color: #ccc;
-}
-
-.contact .container .info-container .box-container {
-  padding: 10px 0;
-}
-
-.contact .container .info-container .box-container .box {
+.contact .info-container .box-container .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,12 +149,31 @@ body {
   padding: 10px 0;
 }
 
-.contact .container .info-container .box-container .box i {
+.contact .info-container .box-container .box i {
   font-size: 30px;
   color: #76b9fc;
 }
 
-.contact .container .info-container .box-container .box h3 {
+.contact .info-container .box-container .box h3 {
   font-size: 20px;
+}
+
+.contact .info-container .box-container .box .social a {
+  font-size: 30px;
+}
+
+.contact .info-container .content-container {
+  border: 2px solid white;
+  padding: 40px;
+  margin: 40px;
+}
+
+.contact .info-container .content-container h2 {
+  font-size: 36px;
+}
+
+.contact .info-container .content-container p {
+  line-height: 1.5;
+  color: #ccc;
 }
 /*# sourceMappingURL=main.css.map */
