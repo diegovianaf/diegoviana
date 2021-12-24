@@ -135,10 +135,12 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: auto 30px;
 }
 
 .contact .container .info-container {
   width: 40%;
+  padding: 0 20px;
 }
 
 .contact .container .info-container h2 {
@@ -146,9 +148,8 @@ body {
 }
 
 .contact .container .info-container p {
-  line-height: 1.8;
+  line-height: 1.5;
   color: #ccc;
-  padding: 10px 0;
 }
 
 .contact .container .info-container .box-container {
