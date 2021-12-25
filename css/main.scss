@@ -82,7 +82,7 @@ body {
 //   width: 100%;
 // }
 
-.home {
+.home-section {
 
   div {
     flex: 1 1 420px;
@@ -125,6 +125,30 @@ body {
   }
 }
 
+.projects-flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .project {
+    flex: 1 1 300px;
+    background: $main-lighter-color;
+    color: $main-color;
+    margin: 10px;
+
+    &:hover {
+      color: $secondary-color;
+      background: $main-color;
+    }
+
+    .project-title {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;      
+    }
+  }
+}
 
 .contact {
   
@@ -136,7 +160,6 @@ body {
   
 
     h2 {
-      font-size: 36px;
       padding-bottom: 20px;
     }
   

@@ -11,6 +11,17 @@
   border: none;
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 body {
   color: white;
   background-color: #0d0d0d;
@@ -93,7 +104,7 @@ body {
   margin: auto;
 }
 
-.home div {
+.home-section div {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 420px;
           flex: 1 1 420px;
@@ -101,36 +112,66 @@ body {
   padding: 20px 0;
 }
 
-.home .image {
+.home-section .image {
   text-align: center;
 }
 
-.home .image img {
+.home-section .image img {
   margin-top: 100px;
   width: 400px;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
-.home .content {
+.home-section .content {
   padding: 0 20px;
 }
 
-.home .content h1 {
+.home-section .content h1 {
   font-size: 36px;
   padding: 10px 0;
 }
 
-.home .content span {
+.home-section .content span {
   color: #76b9fc;
   font-size: 20px;
   padding: 5px 0;
 }
 
-.home .content p {
+.home-section .content p {
   font-size: 16px;
   color: #ccc;
   line-height: 1.5;
   padding: 10px 0;
+}
+
+.projects-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projects-flex .project {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  background: #ccc;
+  color: #0d0d0d;
+  margin: 10px;
+}
+
+.projects-flex .project:hover {
+  color: #76b9fc;
+  background: #0d0d0d;
+}
+
+.projects-flex .project .project-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .contact .info-container {
@@ -143,7 +184,6 @@ body {
 }
 
 .contact .info-container h2 {
-  font-size: 36px;
   padding-bottom: 20px;
 }
 
