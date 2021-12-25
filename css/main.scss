@@ -149,17 +149,28 @@
   }
 }
 
-.contact {
-  
+.contact-section {
 
+  background: $main-light-color;
+  height: 100vh;
+  color: white;
+
+  h2 {
+    padding-top: 20px;
+  }
+
+  span {
+    color: $secondary-color;
+  }
+  
   .info-container {
     
     display: flex;
     margin: 60px auto ;
     justify-content: space-around;
 
-    h2 {
-      padding-bottom: 20px;
+    h3 {
+      font-size: 26px;
     }
   
     p {
@@ -188,7 +199,7 @@
           color: $secondary-color;
         }
 
-        h3 {
+        h4 {
           font-size: 20px;
         }
       }
@@ -202,7 +213,7 @@
           width: 45px;
           line-height: 45px;
           border-radius: 50%;
-          background: $main-light-color;
+          background: $main-color;
           color: white;
           text-align: center;
           margin-right: 5px;

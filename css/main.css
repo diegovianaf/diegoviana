@@ -20,7 +20,7 @@ h2 {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  padding: 20px 0;
+  margin: 20px;
 }
 
 img {
@@ -153,7 +153,21 @@ img {
   text-align: center;
 }
 
-.contact .info-container {
+.contact-section {
+  background: #1d1d1d;
+  height: 100vh;
+  color: white;
+}
+
+.contact-section h2 {
+  padding-top: 20px;
+}
+
+.contact-section span {
+  color: #76b9fc;
+}
+
+.contact-section .info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,28 +176,28 @@ img {
       justify-content: space-around;
 }
 
-.contact .info-container h2 {
-  padding-bottom: 20px;
+.contact-section .info-container h3 {
+  font-size: 26px;
 }
 
-.contact .info-container p {
+.contact-section .info-container p {
   line-height: 1.5;
   color: #ccc;
 }
 
-.contact .info-container .content-container {
+.contact-section .info-container .content-container {
   padding: 0 20px;
   margin: 0 40px;
   width: calc(1270px - 50%);
 }
 
-.contact .info-container .box-container {
+.contact-section .info-container .box-container {
   padding: 0 20px;
   margin: 0 30px;
   width: calc(1270px - 50%);
 }
 
-.contact .info-container .box-container .box {
+.contact-section .info-container .box-container .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,32 +205,32 @@ img {
   padding: 10px 0;
 }
 
-.contact .info-container .box-container .box i {
+.contact-section .info-container .box-container .box i {
   font-size: 30px;
   color: #76b9fc;
 }
 
-.contact .info-container .box-container .box h3 {
+.contact-section .info-container .box-container .box h4 {
   font-size: 20px;
 }
 
-.contact .info-container .box-container .social {
+.contact-section .info-container .box-container .social {
   padding: 10px 0;
 }
 
-.contact .info-container .box-container .social a {
+.contact-section .info-container .box-container .social a {
   font-size: 20px;
   height: 45px;
   width: 45px;
   line-height: 45px;
   border-radius: 50%;
-  background: #1d1d1d;
+  background: #0d0d0d;
   color: white;
   text-align: center;
   margin-right: 5px;
 }
 
-.contact .info-container .box-container .social a:hover {
+.contact-section .info-container .box-container .social a:hover {
   color: #0d0d0d;
   background: #76b9fc;
 }
