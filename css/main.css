@@ -27,21 +27,6 @@ img {
   display: block;
 }
 
-body {
-  color: white;
-  background-color: #0d0d0d;
-}
-
-.heading {
-  text-align: center;
-  font-size: 64px;
-  margin-bottom: 20px auto;
-}
-
-.heading span {
-  color: #76b9fc;
-}
-
 .header {
   background: #1d1d1d;
   display: -webkit-box;
@@ -56,6 +41,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  top: 0;
   width: 100vw;
 }
 
@@ -66,87 +52,61 @@ body {
   letter-spacing: -1px;
 }
 
-.header .navbar {
+.header .nav {
   padding: 0 20px;
 }
 
-.header .navbar ul {
+.header .nav .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .navbar ul li a {
+.header .nav .nav-list a {
   display: block;
   padding: 20px;
   color: white;
   font-size: 18px;
 }
 
-.header .navbar ul li a i {
+.header .nav .nav-list a i {
   color: #76b9fc;
 }
 
-.header .navbar ul li a:hover {
+.header .nav .nav-list a:hover {
   background-color: #76b9fc;
 }
 
-.header .navbar ul li a:hover i {
+.header .nav .nav-list a:hover i {
   color: white;
 }
 
-.container {
+.home-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 1270px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
   height: 100vh;
-  margin: auto;
 }
 
-.home-section div {
+.home-section .box {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 420px;
           flex: 1 1 420px;
-  margin: 20px 0;
-  padding: 20px 0;
 }
 
-.home-section .image {
-  text-align: center;
-}
-
-.home-section .image img {
-  margin-top: 100px;
-  width: 400px;
+.home-section .home-image {
+  width: 360px;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-}
-
-.home-section .content {
-  padding: 0 20px;
-}
-
-.home-section .content h1 {
-  font-size: 36px;
-  padding: 10px 0;
-}
-
-.home-section .content span {
-  color: #76b9fc;
-  font-size: 20px;
-  padding: 5px 0;
-}
-
-.home-section .content p {
-  font-size: 16px;
-  color: #ccc;
-  line-height: 1.5;
-  padding: 10px 0;
 }
 
 .projects-flex {
@@ -155,7 +115,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
