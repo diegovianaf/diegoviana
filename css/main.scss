@@ -74,15 +74,15 @@
 
 .home-section {
   background: $main-light-color;
-  padding: 40px 0;
-  
+  padding: 100px 0;
+
   .home-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   max-width: 900px;
-  height: 100vh;
+  height: calc(100vh - 110px);
   margin: 0 auto;
   gap: 20px;
 
@@ -98,6 +98,7 @@
   }
 
   .home-content {
+
     h1 {
       padding: 10px 0;
       color: white;
