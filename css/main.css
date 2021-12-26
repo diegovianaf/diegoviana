@@ -77,6 +77,7 @@ img {
 
 .home-section {
   background: #1d1d1d;
+  padding: 20px 0;
 }
 
 .home-section .home-container {
@@ -126,31 +127,44 @@ img {
   padding: 10px 0;
 }
 
-.projects-section .projects-container .projects-flex {
+.projects-section {
+  background: #ccc;
+  padding: 20px 0;
+}
+
+.projects-section .projects-container {
+  height: 100%;
+}
+
+.projects-section span {
+  color: #2172c4;
+}
+
+.projects-section .projects-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
-.projects-section .projects-container .projects-flex .project {
+.projects-section .projects-flex .project {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 300px;
           flex: 1 1 300px;
-  background: #ccc;
-  color: #0d0d0d;
+  background: #1d1d1d;
+  color: white;
   margin: 10px;
 }
 
-.projects-section .projects-container .projects-flex .project:hover {
+.projects-section .projects-flex .project:hover {
   color: #76b9fc;
   background: #0d0d0d;
 }
 
-.projects-section .projects-container .projects-flex .project .project-title {
+.projects-section .projects-flex .project .project-title {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -158,8 +172,9 @@ img {
 
 .contact-section {
   background: #1d1d1d;
-  height: 100vh;
   color: white;
+  height: 100%;
+  padding: 20px 0;
 }
 
 .contact-section h2 {

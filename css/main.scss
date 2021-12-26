@@ -74,6 +74,7 @@
 
 .home-section {
   background: $main-light-color;
+  padding: 20px 0;
   
   .home-container {
   display: flex;
@@ -119,19 +120,25 @@
 }
 
 .projects-section {
+  background: $main-lighter-color;
+  padding: 20px 0;
 
   .projects-container {
+    
+    span {
+      color: $secondary-dark-color;
+    }
       
     .projects-flex {
       display: flex;
       flex-wrap: wrap;
       max-width: 900px;
-      margin: 0 auto;
+      margin: 20px auto;
 
       .project {        
         flex: 1 1 300px;
-        background: $main-lighter-color;
-        color: $main-color;
+        background: $main-light-color;
+        color: white;
         margin: 10px;
 
         &:hover {
@@ -139,9 +146,9 @@
           background: $main-color;
         }
 
-        .project-image {
-          // width: 350px;
-        }
+        /* .project-image {
+          width: 350px;
+        } */
 
         .project-title {
           font-size: 18px;
@@ -150,14 +157,13 @@
         }
       }
     }
-  }
 }
 
 .contact-section {
-
   background: $main-light-color;
-  height: 100vh;
   color: white;
+  height: 100%;
+  padding: 20px 0;
 
   h2 {
     padding-top: 20px;
@@ -168,7 +174,6 @@
   }
   
   .info-container {
-    
     display: flex;
     margin: 60px auto ;
     justify-content: space-around;
@@ -229,55 +234,6 @@
         }
       }
     }
-
   }
 }
 
-
-// @media (max-width: 1270px) {
-//   .home {
-//     width: auto;
-//     margin: auto 100px;
-//   }
-// }
-
-// @media (max-width: 840px) {
-//   .home {
-//     // flex-direction: column;
-
-//     .image {
-//       margin: 0 auto;
-//       padding: 0;
-      
-//       img {
-//         width: 300px;
-//       }
-//     }
-
-//     .content {
-//         margin: 0 20px;
-//         text-align: center;
-//         padding: 0px 20px;
-//     }
-//   }
-// }
-
-// @media (max-width: 530px) {
-//   .header {
-//     justify-content: space-around;
-//   }
-
-//   .home {
-//     margin: 0;
-//     padding: 0;
-
-//     .image {
-//       margin: 0;
-//       padding: 0;
-
-//       img {
-//         width: 250px;
-//       }
-//     }
-//   }
-// }
