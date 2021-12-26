@@ -74,36 +74,35 @@
 
 .home-section {
   background: $main-light-color;
-  padding: 100px 0;
+  padding: 20px 0;
 
   .home-container {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   max-width: 900px;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 40px);
   margin: 0 auto;
   gap: 20px;
 
-  .box {
-    // expandir - diminuir - minímo de px para não quebrar (wrap)
-    flex: 1 1 420px;
-    padding: 0 20px ;
-  }
+    .box {
+      // flex: 1 1 420px; expandir - diminuir - minímo de px para não quebrar (wrap) 
+      padding: 0 20px ;
+    }
 
-  .home-image {
-    width: 360px;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  }
+    .home-image {
+      // width: 360px;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
 
-  .home-content {
+    .home-content {
 
-    h1 {
-      padding: 10px 0;
-      color: white;
+      h1 {
+        padding: 10px 0;
+        color: white;
       }
-            
+              
       span {
       color: $secondary-color;
       font-size: 24px;
@@ -165,7 +164,6 @@
 .contact-section {
   background: $main-light-color;
   color: white;
-  height: 100%;
   padding: 40px 0;
 
   span {
@@ -177,7 +175,7 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 900px;
-    padding: 0 10px;
+    padding: 125px 10px;
     margin: 40px auto;
 
     h3 {
@@ -243,52 +241,103 @@
   color: white;
 }
 
-/* 
-@media (max-width: 1270px) {
-  .home {
-    width: auto;
-    margin: auto 100px;
+
+// media queries
+
+@media (max-width: 835px) {
+  .home-section { 
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    .home-content {
+
+      h1 {
+        font-size: 32px;
+        padding: 0;
+      }
+
+      span {
+        font-size: 15px;// não funciona
+        font-weight: 300;
+        padding: 0; // não funciona
+        }
+        
+
+      p {
+        font-size: 14px;
+        padding: 5px 0;
+      }
+    }
   }
 }
 
-@media (max-width: 840px) {
-  .home {
-    flex-direction: column;
+@media (max-width: 720px) {
+  .home-section {
 
-    .image {
-      margin: 0 auto;
+    .home-container {
+      flex-direction: column;
       padding: 0;
-      
-      img {
+      margin: 0;
+
+      .home-image {
         width: 300px;
       }
     }
+  }
+}
 
-    .content {
-        margin: 0 20px;
-        text-align: center;
-        padding: 0px 20px;
+@media (max-width: 690px) {
+  .contact-section {
+    .info-container {
+      padding: 10px;
+      .content-container {
+        
+        h3 {
+          display: none;
+        }
+      }
+      .box-container {
+        padding: 20px;
+      }
     }
   }
 }
 
 @media (max-width: 530px) {
-  .header {
-    justify-content: space-around;
-  }
+  .header {    
+    .logo {
+      padding: 10px;
+    }
 
-  .home {
-    margin: 0;
-    padding: 0;
+    .nav {
+      .nav-list {
+        a {
+          padding: 10px;
 
-    .image {
-      margin: 0;
-      padding: 0;
-
-      img {
-        width: 250px;
+          span {
+            display: none;
+          }
+        }
       }
     }
   }
 }
- */
+
+@media (max-width: 400px) {
+  .home-section { 
+
+    .home-content {
+
+      h1 {
+        // font-size: 26px;
+        padding: 0;
+      }
+
+      span {
+        font-size: 18px; // não funciona
+        padding: 0;
+        // display: none;
+      }
+    }
+  }
+}
