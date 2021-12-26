@@ -74,7 +74,7 @@
 
 .home-section {
   background: $main-light-color;
-  padding: 20px 0;
+  padding: 40px 0;
   
   .home-container {
   display: flex;
@@ -84,12 +84,12 @@
   max-width: 900px;
   height: 100vh;
   margin: 0 auto;
-  gap: 40px;
+  gap: 20px;
 
   .box {
     // expandir - diminuir - minímo de px para não quebrar (wrap)
     flex: 1 1 420px;
-    padding: 20px 0;
+    padding: 0 20px ;
   }
 
   .home-image {
@@ -121,11 +121,10 @@
 
 .projects-section {
   background: $main-lighter-color;
-  padding: 20px 0;
+  padding: 40px 0;
+  height: 100%;
 
   .projects-container {
-    height: 100%;
-
     span {
       color: $secondary-dark-color;
     }
@@ -134,6 +133,7 @@
       display: flex;
       flex-wrap: wrap;
       max-width: 900px;
+      padding: 0 10px;
       margin: 20px auto;
 
       .project {        
@@ -165,21 +165,19 @@
   background: $main-light-color;
   color: white;
   height: 100%;
-  padding: 20px 0;
-
-  h2 {
-    padding-top: 20px;
-  }
+  padding: 40px 0;
 
   span {
     color: $secondary-color;
   }
   
   .info-container {
-    
     display: flex;
-    margin: 60px auto ;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    padding: 0 10px;
+    margin: 40px auto;
 
     h3 {
       font-size: 26px;
@@ -188,18 +186,17 @@
     p {
       line-height: 1.5;
       color: $main-lighter-color;
+      padding-bottom: 10px;
     }
 
     .content-container {
-      padding: 0 20px;
-      margin: 0 40px;
-      width: calc(1270px - 50%);
+      flex: 1 1 300px;
+      margin: 0 10px;
     }
 
     .box-container {
       padding: 0 20px;
       margin: 0 30px;
-      width: calc(1270px - 50%);
 
       .box {
         display: flex;
@@ -216,9 +213,7 @@
         }
       }
 
-      .social {
-        padding: 10px 0;
- 
+      .social { 
         a {
           font-size: 20px;
           height: 45px;
@@ -238,6 +233,13 @@
       }
     }
   }
+}
+
+.footer-section {
+  text-align: center;
+  padding: 10px;
+  background: $main-color;
+  color: white;
 }
 
 /* 

@@ -77,7 +77,7 @@ img {
 
 .home-section {
   background: #1d1d1d;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .home-section .home-container {
@@ -95,14 +95,14 @@ img {
   max-width: 900px;
   height: 100vh;
   margin: 0 auto;
-  gap: 40px;
+  gap: 20px;
 }
 
 .home-section .home-container .box {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 420px;
           flex: 1 1 420px;
-  padding: 20px 0;
+  padding: 0 20px;
 }
 
 .home-section .home-container .home-image {
@@ -129,10 +129,7 @@ img {
 
 .projects-section {
   background: #ccc;
-  padding: 20px 0;
-}
-
-.projects-section .projects-container {
+  padding: 40px 0;
   height: 100%;
 }
 
@@ -147,6 +144,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 900px;
+  padding: 0 10px;
   margin: 20px auto;
 }
 
@@ -177,11 +175,7 @@ img {
   background: #1d1d1d;
   color: white;
   height: 100%;
-  padding: 20px 0;
-}
-
-.contact-section h2 {
-  padding-top: 20px;
+  padding: 40px 0;
 }
 
 .contact-section span {
@@ -192,9 +186,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 60px auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 900px;
+  padding: 0 10px;
+  margin: 40px auto;
 }
 
 .contact-section .info-container h3 {
@@ -204,18 +203,19 @@ img {
 .contact-section .info-container p {
   line-height: 1.5;
   color: #ccc;
+  padding-bottom: 10px;
 }
 
 .contact-section .info-container .content-container {
-  padding: 0 20px;
-  margin: 0 40px;
-  width: calc(1270px - 50%);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  margin: 0 10px;
 }
 
 .contact-section .info-container .box-container {
   padding: 0 20px;
   margin: 0 30px;
-  width: calc(1270px - 50%);
 }
 
 .contact-section .info-container .box-container .box {
@@ -235,10 +235,6 @@ img {
   font-size: 20px;
 }
 
-.contact-section .info-container .box-container .social {
-  padding: 10px 0;
-}
-
 .contact-section .info-container .box-container .social a {
   font-size: 20px;
   height: 45px;
@@ -254,6 +250,13 @@ img {
 .contact-section .info-container .box-container .social a:hover {
   color: #0d0d0d;
   background: #76b9fc;
+}
+
+.footer-section {
+  text-align: center;
+  padding: 10px;
+  background: #0d0d0d;
+  color: white;
 }
 
 /* 
