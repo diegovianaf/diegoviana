@@ -244,6 +244,14 @@
 
 // media queries
 
+@media (max-width: 1270px) and (min-width: 687px){
+  .contact-section {
+    .info-container {
+      padding: 72px 10px;
+    }
+  }
+}
+
 @media (max-width: 835px) {
   .home-section { 
     padding-bottom: 0;
@@ -286,7 +294,7 @@
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 686px) {
   .contact-section {
     .info-container {
       padding: 10px;
