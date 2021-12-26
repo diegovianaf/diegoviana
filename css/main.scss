@@ -34,7 +34,7 @@
   // flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  // position: fixed;
+  position: fixed;
   // top: 0;
   width: 100%;
 
@@ -77,11 +77,11 @@
   
   .home-container {
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   max-width: 900px;
-  height: calc(100vh - 67px);
+  height: 100vh;
   margin: 0 auto;
   gap: 40px;
 
@@ -128,7 +128,7 @@
       max-width: 900px;
       margin: 0 auto;
 
-      .project {
+      .project {        
         flex: 1 1 300px;
         background: $main-lighter-color;
         color: $main-color;
@@ -137,6 +137,10 @@
         &:hover {
           color: $secondary-color;
           background: $main-color;
+        }
+
+        .project-image {
+          // width: 350px;
         }
 
         .project-title {
