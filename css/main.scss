@@ -280,6 +280,10 @@
 }
 
 @media (max-width: 720px) {
+  h2 {
+    font-size: 28px;
+  }
+
   .home-section {
 
     .home-container {
@@ -322,6 +326,11 @@
         a {
           padding: 10px;
 
+          i {
+            font-size: 20px;
+            padding-left: 10px;
+          }
+
           span {
             display: none;
           }
@@ -333,6 +342,7 @@
 
 @media (max-width: 400px) {
   .home-section { 
+    padding-bottom: 60px;
 
     .home-content {
 

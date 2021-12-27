@@ -279,6 +279,9 @@ img {
 }
 
 @media (max-width: 720px) {
+  h2 {
+    font-size: 28px;
+  }
   .home-section .home-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -311,12 +314,19 @@ img {
   .header .nav .nav-list a {
     padding: 10px;
   }
+  .header .nav .nav-list a i {
+    font-size: 20px;
+    padding-left: 10px;
+  }
   .header .nav .nav-list a span {
     display: none;
   }
 }
 
 @media (max-width: 400px) {
+  .home-section {
+    padding-bottom: 60px;
+  }
   .home-section .home-content h1 {
     padding: 0;
   }
