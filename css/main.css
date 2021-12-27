@@ -114,21 +114,23 @@ img {
 
 .home-section .home-container .home-content h1 {
   color: white;
+  line-height: 1.2;
 }
 
-.home-section .home-container .home-content span {
+.home-section .home-container .home-content h3 {
   color: #76b9fc;
   font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 10px;
 }
 
 .home-section .home-container .home-content p {
   color: #ccc;
   line-height: 1.5;
-  padding-top: 10px;
 }
 
-.home-section .home-container .home-content p:last-of-type {
-  padding-top: 3px;
+.home-section .home-container .home-content p:first-of-type {
+  padding-bottom: 3px;
 }
 
 .projects-section {
@@ -275,18 +277,15 @@ img {
     padding-bottom: 0;
     margin-bottom: 0;
   }
-  .home-section .home-content h1 {
-    font-size: 32px;
-    padding: 0;
+  .home-section .home-container .home-content h1 {
+    font-size: 30px;
   }
-  .home-section .home-content span {
-    font-size: 18px;
+  .home-section .home-container .home-content h3 {
+    font-size: 20px;
     font-weight: 300;
-    padding: 0;
   }
-  .home-section .home-content p {
+  .home-section .home-container .home-content p {
     font-size: 14px;
-    padding: 5px 0;
   }
 }
 
@@ -344,16 +343,15 @@ img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   .home-section {
     padding: 60px 0;
   }
-  .home-section .home-content h1 {
-    padding: 0;
+  .home-section .home-container .home-content h1 {
+    font-size: 24px;
   }
-  .home-section .home-content span {
-    font-size: 18px;
-    padding: 0;
+  .home-section .home-container .home-content h3 {
+    font-size: 16px;
   }
 }
 
