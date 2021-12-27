@@ -66,6 +66,7 @@ img {
   padding: 20px;
   color: white;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .header .nav .nav-list a i {
@@ -77,7 +78,7 @@ img {
 }
 
 .header .nav .nav-list a:hover i {
-  color: white;
+  color: #0d0d0d;
 }
 
 .home-section {
@@ -112,7 +113,6 @@ img {
 }
 
 .home-section .home-container .home-content h1 {
-  padding: 10px 0;
   color: white;
 }
 
@@ -124,7 +124,11 @@ img {
 .home-section .home-container .home-content p {
   color: #ccc;
   line-height: 1.5;
-  padding: 10px 0;
+  padding-top: 10px;
+}
+
+.home-section .home-container .home-content p:last-of-type {
+  padding-top: 3px;
 }
 
 .projects-section {
@@ -229,22 +233,21 @@ img {
 }
 
 .contact-section .info-container .box-container .box i {
-  font-size: 30px;
+  font-size: 25px;
   color: #76b9fc;
 }
 
 .contact-section .info-container .box-container .box h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .contact-section .info-container .box-container .social a {
-  font-size: 20px;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-  border-radius: 50%;
+  font-size: 22px;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
   background: #0d0d0d;
-  color: white;
+  color: #ccc;
   text-align: center;
   margin-right: 5px;
 }

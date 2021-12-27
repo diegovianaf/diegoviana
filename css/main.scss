@@ -28,6 +28,7 @@
           padding: 20px;
           color: white;
           font-size: 18px;
+          font-weight: 500;
 
           i {
               color: $secondary-color;
@@ -37,7 +38,7 @@
             background-color: $secondary-color;
 
             i {
-              color: white;
+              color: $main-color;
             }
           }
         }
@@ -79,7 +80,6 @@
     .home-content {
 
       h1 {
-        padding: 10px 0;
         color: white;
       }
               
@@ -92,7 +92,11 @@
       // font-size: 16px;
       color: $main-lighter-color;
       line-height: 1.5;
-      padding: 10px 0;
+      padding-top: 10px;
+
+      &:last-of-type {
+        padding-top: 3px;
+      }
       }
     }
   }
@@ -181,24 +185,24 @@
         padding: 10px 0;
 
         i {
-          font-size: 30px;
+          font-size: 25px;
           color: $secondary-color;
         }
 
         h4 {
-          font-size: 20px;
+          font-size: 18px;
         }
       }
 
       .social { 
         a {
-          font-size: 20px;
-          height: 45px;
-          width: 45px;
-          line-height: 45px;
-          border-radius: 50%;
+          font-size: 22px;
+          height: 36px;
+          width: 36px;
+          line-height: 36px;
+          // border-radius: 50%;
           background: $main-color;
-          color: white;
+          color: $main-lighter-color;
           text-align: center;
           margin-right: 5px;
 
