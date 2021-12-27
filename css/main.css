@@ -97,7 +97,6 @@ img {
           justify-content: center;
   gap: 20px;
   max-width: 900px;
-  height: auto;
   margin: 0 auto;
   position: absolute;
   inset: 50% 0;
@@ -105,9 +104,10 @@ img {
 
 .home-section .home-container .box {
   padding: 0 20px;
+  margin: 0 auto;
 }
 
-.home-section .home-container .home-image {
+.home-section .home-container .img-container img {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
@@ -287,9 +287,15 @@ img {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 740px) {
   h2 {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-section {
+    padding: 50px 0;
   }
   .home-section .home-container {
     -webkit-box-orient: vertical;
@@ -299,14 +305,8 @@ img {
     padding: 0;
     margin: 0;
   }
-  .home-section .home-container .home-image {
-    width: 300px;
-  }
-}
-
-@media (max-width: 686px) {
-  .home-section {
-    padding: 50px 0;
+  .home-section .home-container .img-container img {
+    width: 250px;
   }
   .contact-section .info-container {
     padding: 10px;
@@ -354,9 +354,12 @@ img {
   }
 }
 
-@media (max-width: 374px) {
-  .home-section {
-    padding: 80px 0;
+@media (max-width: 320px) {
+  .home-section .home-container {
+    padding: 60px 0;
+  }
+  .home-section .home-container img {
+    width: 250px;
   }
 }
 /*# sourceMappingURL=main.css.map */

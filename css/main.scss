@@ -3,30 +3,6 @@
 @import 'base';
 @import 'variables';
 
-// .heading {
-//   text-align: center;
-//   font-size: 64px;
-//   margin-bottom: 20px auto;
-
-//   span {
-//     color: $secondary-color
-//   }
-// }
-
-// .container {
-//   display: flex;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   max-width: 1270px;
-//   height: 100vh;
-//   margin: auto;
-//   // gap: 20px;
-//   // border: 1px solid white;
-// }
-
-// .row {
-//   width: 100%;
-// }
 
 .header {
   background: $main-color;
@@ -73,8 +49,7 @@
 .home-section {
   background: $main-light-color;
   // padding: 20px 0;
-  min-height: 100vh;
-  
+  min-height: 100vh;  
 
   .home-container {
   display: flex;
@@ -83,19 +58,22 @@
   justify-content: center;
   gap: 20px;
   max-width: 900px;
-  height: auto;
+  // height: calc(100vh - 125px);
   margin: 0 auto;
   position: absolute; 
   inset: 50% 0; // shorthand for top, right, bottom, left 
 
     .box {
-      // flex: 1 1 420px; expandir - diminuir - minímo de px para não quebrar (wrap) 
+      // flex: 1 1 420px; // expandir - diminuir - minímo de px para não quebrar (wrap) 
       padding: 0 20px ;
+      margin: 0 auto;
     }
 
-    .home-image {
-      // width: 360px;
+    .img-container {
+
+      img {
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      }
     }
 
     .home-content {
@@ -245,6 +223,7 @@
 // media queries
 
 @media (max-width: 1270px) and (min-width: 687px){
+  
   .contact-section {
     .info-container {
       padding: 72px 10px;
@@ -253,6 +232,7 @@
 }
 
 @media (max-width: 835px) {
+
   .home-section { 
     padding-bottom: 0;
     margin-bottom: 0;
@@ -268,8 +248,7 @@
         font-size: 18px;// não funciona
         font-weight: 300;
         padding: 0; // não funciona
-        }
-        
+        } 
 
       p {
         font-size: 14px;
@@ -279,29 +258,29 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 740px) {
+
   h2 {
     font-size: 28px;
   }
+}
+
+@media (max-width: 650px) {
 
   .home-section {
-    
+    padding: 50px 0;
+
     .home-container {
       flex-direction: column;
       padding: 0;
       margin: 0;
 
-      .home-image {
-        width: 300px;
+      .img-container {
+        img {
+          width: 250px;
+        }
       }
     }
-  }
-}
-
-@media (max-width: 686px) {
-
-  .home-section {
-    padding: 50px 0;
   }
 
   .contact-section {
@@ -377,9 +356,16 @@
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 320px) {
 
-  .home-section { 
-    padding: 80px 0;
+  .home-section {
+
+    .home-container {
+      padding: 60px 0;
+    
+      img {
+        width: 250px;
+      }
+    }
   }
 }
