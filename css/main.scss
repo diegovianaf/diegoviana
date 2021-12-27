@@ -73,7 +73,7 @@
 .home-section {
   background: $main-light-color;
   // padding: 20px 0;
-  height: 100vh;
+  min-height: 100vh;
   
 
   .home-container {
@@ -86,7 +86,7 @@
   height: auto;
   margin: 0 auto;
   position: absolute; 
-  inset: 50% -50%; // shorthand for top, right, bottom, left 
+  inset: 50% 0; // shorthand for top, right, bottom, left 
 
     .box {
       // flex: 1 1 420px; expandir - diminuir - minímo de px para não quebrar (wrap) 
@@ -107,8 +107,7 @@
               
       span {
       color: $secondary-color;
-      font-size: 24px;
-      padding: 10px 0;
+      font-size: 22px;
       }
             
       p {
@@ -123,17 +122,9 @@
 
 .projects-section {
   padding: 20px 0;
-
+  min-height: 100vh;
+  
   .projects-container {
-  align-items: center;
-  justify-content: center;
-  // max-width: 900px;
-  // height: 100vh;
-  margin: 0 auto;
-    
-    /* h2 {
-      padding-top: 60px;
-    } */
 
     span {
       color: $secondary-color;
@@ -142,9 +133,11 @@
     .projects-flex {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
       max-width: 720px;
       padding: 0 10px;
-      margin: 0 auto;
+      margin: auto;
 
       .project {
         flex: 1 1 220px;
@@ -159,7 +152,7 @@
 
         .project-title {
           font-size: 18px;
-          font-weight: 600;
+          font-weight: 500;
           text-align: center;      
         }
       }
@@ -171,6 +164,7 @@
   background: $main-light-color;
   color: white;
   padding: 20px 0;
+  min-height: 100vh;
 
   span {
     color: $secondary-color;
@@ -191,7 +185,7 @@
     p {
       line-height: 1.5;
       color: $main-lighter-color;
-      padding-bottom: 10px;
+      padding: 5px 0;
     }
 
     .content-container {
@@ -241,11 +235,10 @@
 }
 
 .footer {
+  background: $main-color;
+  color: white;  
   text-align: center;
   padding: 20px;
-  background: $main-color;
-  color: white;
-  // margin-top: 200px;
 }
 
 
@@ -272,7 +265,7 @@
       }
 
       span {
-        font-size: 15px;// não funciona
+        font-size: 18px;// não funciona
         font-weight: 300;
         padding: 0; // não funciona
         }
@@ -317,11 +310,17 @@
       .content-container {
         
         h3 {
-          display: none;
+          font-size: 22px;
         }
+
+        
       }
       .box-container {
-        padding: 20px;
+        padding: 10px 0;
+        
+        h4 {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -341,7 +340,7 @@
 
           i {
             font-size: 20px;
-            padding-left: 10px;
+            padding: 10px;
           }
 
           span {
@@ -350,6 +349,10 @@
         }
       }
     }
+  }
+
+  .footer {
+    padding: 15px;
   }
 }
 

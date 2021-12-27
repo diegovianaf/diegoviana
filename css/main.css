@@ -17,12 +17,12 @@ body {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
   text-align: center;
   margin: 20px;
@@ -82,7 +82,7 @@ img {
 
 .home-section {
   background: #1d1d1d;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .home-section .home-container {
@@ -100,7 +100,7 @@ img {
   height: auto;
   margin: 0 auto;
   position: absolute;
-  inset: 50% -50%;
+  inset: 50% 0;
 }
 
 .home-section .home-container .box {
@@ -118,8 +118,7 @@ img {
 
 .home-section .home-container .home-content span {
   color: #76b9fc;
-  font-size: 24px;
-  padding: 10px 0;
+  font-size: 22px;
 }
 
 .home-section .home-container .home-content p {
@@ -130,19 +129,7 @@ img {
 
 .projects-section {
   padding: 20px 0;
-}
-
-.projects-section .projects-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  /* h2 {
-      padding-top: 60px;
-    } */
+  min-height: 100vh;
 }
 
 .projects-section .projects-container span {
@@ -155,9 +142,15 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 720px;
   padding: 0 10px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .projects-section .projects-container .projects-flex .project {
@@ -176,7 +169,7 @@ img {
 
 .projects-section .projects-container .projects-flex .project .project-title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -184,6 +177,7 @@ img {
   background: #1d1d1d;
   color: white;
   padding: 20px 0;
+  min-height: 100vh;
 }
 
 .contact-section span {
@@ -211,7 +205,7 @@ img {
 .contact-section .info-container p {
   line-height: 1.5;
   color: #ccc;
-  padding-bottom: 10px;
+  padding: 5px 0;
 }
 
 .contact-section .info-container .content-container {
@@ -261,10 +255,10 @@ img {
 }
 
 .footer {
-  text-align: center;
-  padding: 20px;
   background: #0d0d0d;
   color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 @media (max-width: 1270px) and (min-width: 687px) {
@@ -283,7 +277,7 @@ img {
     padding: 0;
   }
   .home-section .home-content span {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     padding: 0;
   }
@@ -318,10 +312,13 @@ img {
     padding: 10px;
   }
   .contact-section .info-container .content-container h3 {
-    display: none;
+    font-size: 22px;
   }
   .contact-section .info-container .box-container {
-    padding: 20px;
+    padding: 10px 0;
+  }
+  .contact-section .info-container .box-container h4 {
+    font-size: 18px;
   }
 }
 
@@ -334,10 +331,13 @@ img {
   }
   .header .nav .nav-list a i {
     font-size: 20px;
-    padding-left: 10px;
+    padding: 10px;
   }
   .header .nav .nav-list a span {
     display: none;
+  }
+  .footer {
+    padding: 15px;
   }
 }
 
