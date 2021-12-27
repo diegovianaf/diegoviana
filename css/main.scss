@@ -31,11 +31,9 @@
 .header {
   background: $main-color;
   display: flex;
-  // flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  // top: 0;
+  top: 0;
   width: 100%;
 
   .logo {
@@ -74,17 +72,21 @@
 
 .home-section {
   background: $main-light-color;
-  padding: 20px 0;
+  // padding: 20px 0;
+  height: 100vh;
+  
 
   .home-container {
   display: flex;
   // flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 900px;
-  height: calc(100vh - 40px);
-  margin: 0 auto;
   gap: 20px;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  position: absolute; 
+  inset: 50% -50%; // shorthand for top, right, bottom, left 
 
     .box {
       // flex: 1 1 420px; expandir - diminuir - minímo de px para não quebrar (wrap) 
@@ -120,36 +122,40 @@
 }
 
 .projects-section {
-  background: $main-lighter-color;
-  padding: 40px 0;
-  height: 100%;
+  padding: 20px 0;
 
   .projects-container {
+  align-items: center;
+  justify-content: center;
+  // max-width: 900px;
+  // height: 100vh;
+  margin: 0 auto;
+    
+    /* h2 {
+      padding-top: 60px;
+    } */
+
     span {
-      color: $secondary-dark-color;
+      color: $secondary-color;
     }
       
     .projects-flex {
       display: flex;
       flex-wrap: wrap;
-      max-width: 900px;
+      max-width: 720px;
       padding: 0 10px;
-      margin: 20px auto;
+      margin: 0 auto;
 
-      .project {        
-        flex: 1 1 300px;
-        background: $main-light-color;
-        color: white;
+      .project {
+        flex: 1 1 220px;
+        background: $main-color;
+        color: $main-lighter-color;
         margin: 10px;
 
         &:hover {
-          color: $secondary-color;
-          background: $main-color;
+          color: $main-color;
+          background: $secondary-color;
         }
-
-        /* .project-image {
-          width: 350px;
-        } */
 
         .project-title {
           font-size: 18px;
@@ -164,7 +170,7 @@
 .contact-section {
   background: $main-light-color;
   color: white;
-  padding: 40px 0;
+  padding: 20px 0;
 
   span {
     color: $secondary-color;
@@ -175,7 +181,7 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 900px;
-    padding: 125px 10px;
+    padding: 100px 10px;
     margin: 40px auto;
 
     h3 {
@@ -239,6 +245,7 @@
   padding: 20px;
   background: $main-color;
   color: white;
+  // margin-top: 200px;
 }
 
 
@@ -285,7 +292,7 @@
   }
 
   .home-section {
-
+    
     .home-container {
       flex-direction: column;
       padding: 0;
@@ -299,6 +306,11 @@
 }
 
 @media (max-width: 686px) {
+
+  .home-section {
+    padding: 50px 0;
+  }
+
   .contact-section {
     .info-container {
       padding: 10px;
@@ -316,6 +328,7 @@
 }
 
 @media (max-width: 530px) {
+
   .header {    
     .logo {
       padding: 10px;
@@ -341,8 +354,9 @@
 }
 
 @media (max-width: 400px) {
+
   .home-section { 
-    padding-bottom: 60px;
+    padding: 60px 0;
 
     .home-content {
 
@@ -357,5 +371,12 @@
         // display: none;
       }
     }
+  }
+}
+
+@media (max-width: 374px) {
+
+  .home-section { 
+    padding: 80px 0;
   }
 }
