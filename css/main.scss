@@ -5,7 +5,7 @@
 
 
 .header {
-  background: $main-color;
+  background: $main-light-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +48,6 @@
 }
 
 .home-section {
-  background: $main-light-color;
   // padding: 20px 0;
   min-height: 100vh;  
 
@@ -121,12 +120,13 @@
       justify-content: center;
       max-width: 720px;
       padding: 0 10px;
-      margin: auto;
+      margin: 0 auto;
 
       .project {
         flex: 1 1 220px;
-        background: $main-color;
+        background: $main-light-color;
         color: $main-lighter-color;
+        box-shadow: $box-shadow;
         margin: 10px;
 
         &:hover {
@@ -145,8 +145,6 @@
 }
 
 .contact-section {
-  background: $main-light-color;
-  color: white;
   padding: 20px 0;
   min-height: 100vh;
 
@@ -219,11 +217,12 @@
 }
 
 .footer {
-  background: $main-color;
+  background: $main-light-color;
   color: white;  
   text-align: center;
   padding: 20px;
 }
+
 
 
 // media queries
