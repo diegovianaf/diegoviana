@@ -22,7 +22,7 @@
 ---
 
 ## 🔓 Technologies
-### For the development of this site I used the following technologies:
+### To develop this site, I used the following technologies:
 
 - HTML
 - Sass
