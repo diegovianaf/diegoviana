@@ -21,8 +21,8 @@
 <!-- - **About:** -->
 ---
 
-## 🔓 Languages
-### For the development of this site I used the following languages:
+## 🔓 Technologies
+### For the development of this site I used the following technologies:
 
 - HTML
 - Sass
