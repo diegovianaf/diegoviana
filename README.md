@@ -21,7 +21,7 @@
 <!-- - **About:** -->
 ---
 
-## 💼 Technologies
+## 🔓 Technologies
 ### For the development of this site I used the following technologies:
 
 - HTML
