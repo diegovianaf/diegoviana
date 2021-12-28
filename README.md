@@ -1,4 +1,4 @@
-# 🌱 My Portfolio
+# 🌱 Portfolio
 
 ###  This Portfolio is my first project, created to show my projects during my learning journey in Web Development.
 
