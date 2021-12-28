@@ -29,5 +29,5 @@
 
 ---
 
-## 🧔🏻 Author
+## 👨‍💻 Author
 ### [Diego Viana](https://diegovianaf.github.io/portfolio/)
