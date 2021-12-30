@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #0d0d0d;
+  background-color: #040404;
   color: white;
 }
 
@@ -34,7 +34,7 @@ img {
 }
 
 .header {
-  background: #1d1d1d;
+  background: #040404;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,7 +49,7 @@ img {
 }
 
 .header .logo {
-  padding: 20px;
+  padding: 20px 20px 10px;
   font-size: 18px;
   color: white;
   letter-spacing: -1px;
@@ -63,22 +63,22 @@ img {
 
 .header .nav .nav-list a {
   display: block;
-  padding: 20px;
-  color: white;
+  padding: 20px 20px 10px;
+  color: #ccc;
   font-size: 18px;
   font-weight: 500;
 }
 
 .header .nav .nav-list a i {
-  color: #76b9fc;
+  color: white;
 }
 
 .header .nav .nav-list a:hover {
-  background-color: #76b9fc;
+  color: white;
 }
 
 .header .nav .nav-list a:hover i {
-  color: #0d0d0d;
+  color: #76b9fc;
 }
 
 .home-section {
@@ -170,7 +170,7 @@ img {
 }
 
 .projects-section .projects-container .projects-flex .project:hover {
-  color: #0d0d0d;
+  color: #040404;
   background: #76b9fc;
 }
 
@@ -247,19 +247,19 @@ img {
   height: 36px;
   width: 36px;
   line-height: 36px;
-  background: #0d0d0d;
+  background: #040404;
   color: #ccc;
   text-align: center;
   margin-right: 5px;
 }
 
 .contact-section .info-container .box-container .social a:hover {
-  color: #0d0d0d;
+  color: #040404;
   background: #76b9fc;
 }
 
 .footer {
-  background: #1d1d1d;
+  background: #040404;
   color: white;
   text-align: center;
   padding: 20px;

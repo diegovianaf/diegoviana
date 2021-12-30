@@ -5,7 +5,7 @@
 
 
 .header {
-  background: $main-light-color;
+  background: $main-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@
   width: 100%;
 
   .logo {
-    padding: 20px;
+    padding: 20px 20px 10px;
     font-size: 18px;
     color: white;
     letter-spacing: -1px;
@@ -25,20 +25,21 @@
 
         a {
           display: block;
-          padding: 20px;
-          color: white;
+          padding: 20px 20px 10px;
+          color: $main-lighter-color;
           font-size: 18px;
           font-weight: 500;
 
           i {
-              color: $secondary-color;
+              color: white;
           }
 
           &:hover {
-            background-color: $secondary-color;
+            // background-color: $secondary-color;
+            color: white;
 
             i {
-              color: $main-color;
+              color: $secondary-color;
             }
           }
         }
@@ -217,7 +218,7 @@
 }
 
 .footer {
-  background: $main-light-color;
+  background: $main-color;
   color: white;  
   text-align: center;
   padding: 20px;
