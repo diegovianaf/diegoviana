@@ -31,16 +31,16 @@
           font-weight: 500;
 
           i {
-              color: white;
+              color: $secondary-color;
           }
 
           &:hover {
             // background-color: $secondary-color;
             color: white;
 
-            i {
+            /* i {
               color: $secondary-color;
-            }
+            } */
           }
         }
       
@@ -106,10 +106,11 @@
 
 .projects-section {
   padding: 20px 0;
-  min-height: 100vh;
+  
   
   .projects-container {
-
+    min-height: 100vh;
+    
     span {
       color: $secondary-color;
     }
@@ -161,19 +162,43 @@
     padding: 100px 10px;
     margin: 40px auto;
 
-    h3 {
-      font-size: 26px;
-    }
-  
-    p {
-      line-height: 1.5;
-      color: $main-lighter-color;
-      padding: 5px 0;
-    }
+    
 
     .content-container {
       flex: 1 1 300px;
       margin: 0 10px;
+
+      h3 {
+        font-size: 26px;
+      }
+    
+      p {
+        line-height: 1.5;
+        color: $main-lighter-color;
+        padding: 5px 0;
+      }
+      
+      a {
+        color: white;
+        font-weight: 500;
+
+        /* &:link {
+          color: white;
+        }
+
+        &:visited {
+          color: white;
+        } */
+
+        &:hover {
+          font-weight: 600;
+        }
+
+        &:active {
+          text-decoration: underline;
+        }
+
+      }
     }
 
     .box-container {
@@ -218,10 +243,34 @@
 }
 
 .footer {
-  background: $main-color;
-  color: white;  
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+
+  .social { 
+    a {
+      font-size: 22px;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+      // border-radius: 50%;
+      // background: $main-color;
+      color: $main-lighter-color;
+      text-align: center;
+      margin-right: 5px;
+
+      &:hover {
+        color: $secondary-color; 
+        background: $main-light-color;
+      }
+    }
+  }
+
+  p {
+    color: $main-lighter-color;  
+  }
 }
 
 

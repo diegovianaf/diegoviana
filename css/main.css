@@ -70,15 +70,14 @@ img {
 }
 
 .header .nav .nav-list a i {
-  color: white;
+  color: #76b9fc;
 }
 
 .header .nav .nav-list a:hover {
   color: white;
-}
-
-.header .nav .nav-list a:hover i {
-  color: #76b9fc;
+  /* i {
+              color: $secondary-color;
+            } */
 }
 
 .home-section {
@@ -134,6 +133,9 @@ img {
 
 .projects-section {
   padding: 20px 0;
+}
+
+.projects-section .projects-container {
   min-height: 100vh;
 }
 
@@ -203,21 +205,41 @@ img {
   margin: 40px auto;
 }
 
-.contact-section .info-container h3 {
-  font-size: 26px;
-}
-
-.contact-section .info-container p {
-  line-height: 1.5;
-  color: #ccc;
-  padding: 5px 0;
-}
-
 .contact-section .info-container .content-container {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 300px;
           flex: 1 1 300px;
   margin: 0 10px;
+}
+
+.contact-section .info-container .content-container h3 {
+  font-size: 26px;
+}
+
+.contact-section .info-container .content-container p {
+  line-height: 1.5;
+  color: #ccc;
+  padding: 5px 0;
+}
+
+.contact-section .info-container .content-container a {
+  color: white;
+  font-weight: 500;
+  /* &:link {
+          color: white;
+        }
+
+        &:visited {
+          color: white;
+        } */
+}
+
+.contact-section .info-container .content-container a:hover {
+  font-weight: 600;
+}
+
+.contact-section .info-container .content-container a:active {
+  text-decoration: underline;
 }
 
 .contact-section .info-container .box-container {
@@ -259,10 +281,39 @@ img {
 }
 
 .footer {
-  background: #040404;
-  color: white;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
+}
+
+.footer .social a {
+  font-size: 22px;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  color: #ccc;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.footer .social a:hover {
+  color: #76b9fc;
+  background: #1d1d1d;
+}
+
+.footer p {
+  color: #ccc;
 }
 
 @media (max-width: 1270px) and (min-width: 687px) {
