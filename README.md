@@ -1,17 +1,13 @@
 # 🌱 Portfolio
 
-###  This Portfolio is my first project, created to show my projects during my learning journey in Web Development.
-
----
+##  This Portfolio is my first project, developed to show my projects during my learning journey in Web Development.
 
 ![Result of the project](./imgs-readme/portfolio-pic.jpg)
 
 [See the Project Here](https://diegovianaf.github.io/portfolio/)
 
----
 
 ## 📍 Sections
-### The site has 3 different sections:
 
 - **Home:** a simple page with my profile picture and a brief introduction
 
@@ -19,15 +15,13 @@
 
 - **Contact:** with details on how you can get in touch with me
 <!-- - **About:** -->
----
 
-## 🔓 Technologies
-### To develop this site, I used the following technologies:
+
+## 🛠 Features
 
 - HTML
 - Sass
 
----
 
 ## 👨‍💻 Author
 ### [Diego Viana](https://diegovianaf.github.io/portfolio/)
